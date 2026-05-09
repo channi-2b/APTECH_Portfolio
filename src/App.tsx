@@ -9,7 +9,6 @@ import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
-// import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -30,8 +29,6 @@ function App() {
       <Route path="/admin" element={<AdminLogin />} />
 
       <Route path="/admin/dashboard" element={<AdminDashboard />} />
-
-      {/*<Route path="*" element={<NotFound />} /> */}
 
     </Routes>
 

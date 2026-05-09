@@ -1,5 +1,6 @@
 import './Home.css'
 import { Link } from 'react-router-dom'
+import photo from '../assets/myphoto.jpg'
 
 function Home() {
   return (
@@ -9,7 +10,7 @@ function Home() {
 
         {/* Left — Photo */}
         <div className="hero__image">
-          <img src="/myphoto.JPG" alt="Toby" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          <img src={photo} alt="Toby" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         </div>
 
         {/* Right — Content */}
