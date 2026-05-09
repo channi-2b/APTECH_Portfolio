@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #111111;
+  font-family: 'Roboto', sans-serif;
+}
+
+.site-nav__container {@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #111111;
+  font-family: 'Roboto', sans-serif;
+}
+
+.site-nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 8vw;
+}
+
+.site-nav__links {
+  margin-left: auto;
+}
+
+.site-nav__brand {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.site-nav__links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav__link {
+  color: #888888;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.site-nav__link:hover,
+.site-nav__link--active {
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .site-nav__links { gap: 20px; }
+  .site-nav__container { padding: 20px 6vw; }
+}
+
+.site-nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-nav__logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  mix-blend-mode: screen;
+}
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 8vw;
+}
+
+.site-nav__links {
+  margin-left: auto;
+}
+
+.site-nav__brand {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.site-nav__links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav__link {
+  color: #888888;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.site-nav__link:hover,
+.site-nav__link--active {
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .site-nav__links { gap: 20px; }
+  .site-nav__container { padding: 20px 6vw; }
+}

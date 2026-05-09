@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.admin-login {
+    font-family: 'Roboto', sans-serif;
+    background: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-login__box {
+    width: 100%;
+    max-width: 380px;
+    padding: 48px 40px;
+    border: 1px solid #e5e5e5;
+}
+
+.admin-login__question {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    margin-bottom: 12px;
+}
+
+.admin-login__title {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    color: #111111;
+    margin-bottom: 36px;
+}
+
+.admin-login__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.admin-form__field input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    padding: 12px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #111111;
+    outline: none;
+    margin-bottom: 24px;
+    transition: border-color 0.2s ease;
+}
+
+.admin-form__field input::placeholder {
+    color: #aaaaaa;
+}
+
+.admin-form__field input:focus {
+    border-bottom-color: #111111;
+}
+
+.admin-form__error {
+    font-size: 12px;
+    font-weight: 300;
+    color: #cc0000;
+    margin-bottom: 16px;
+}
+
+.admin-form__submit {
+    background: #111111;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 14px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s ease;
+    margin-top: 8px;
+}
+
+.admin-form__submit:hover:not(:disabled) {
+    background: #333333;
+}
+
+.admin-form__submit:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

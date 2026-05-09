@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.contact {
+  font-family: 'Roboto', sans-serif;
+  background: #ffffff;
+  color: #111111;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 80px 8vw;
+  gap: 80px;
+}
+
+/* Left */
+.contact__heading h1 {
+  font-size: clamp(48px, 7vw, 88px);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.contact__desc {
+  margin-top: 32px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #666666;
+  line-height: 1.7;
+  max-width: 320px;
+}
+
+/* Right — Form */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.form__field input,
+.form__field textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  padding: 14px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #111111;
+  outline: none;
+  resize: none;
+  transition: border-color 0.2s ease;
+  margin-bottom: 24px;
+}
+
+.form__field input::placeholder,
+.form__field textarea::placeholder {
+  color: #aaaaaa;
+}
+
+.form__field input:focus,
+.form__field textarea:focus {
+  border-bottom-color: #111111;
+}
+
+.form__status {
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+.form__status--ok { color: #111111; }
+.form__status--err { color: #cc0000; }
+
+.form__submit {
+  margin-top: 8px;
+  background: #111111;
+  color: #ffffff;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 15px 32px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.2s ease;
+}
+.form__submit:hover:not(:disabled) { background: #333333; }
+.form__submit:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact {
+    grid-template-columns: 1fr;
+    padding: 80px 6vw;
+    gap: 48px;
+  }
+  .form__submit { align-self: stretch; text-align: center; }
+}
